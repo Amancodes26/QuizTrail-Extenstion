@@ -1,0 +1,793 @@
+2025-02-14 14:15:53,606 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=IsM4bnJ-8Gw
+2025-02-14 14:15:53,608 - main - INFO - Starting download from: https://www.youtube.com/watch?v=IsM4bnJ-8Gw
+2025-02-14 14:15:54,874 - main - ERROR - PyTube error: Exception while accessing title of https://youtube.com/watch?v=IsM4bnJ-8Gw. Please file a bug report at https://github.com/pytube/pytube
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'videoDetails'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 63, in download_audio
+    logger.info(f"Video title: {yt.title}")
+                                ^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 346, in title
+    raise exceptions.PytubeError(
+    ...<4 lines>...
+    )
+pytube.exceptions.PytubeError: Exception while accessing title of https://youtube.com/watch?v=IsM4bnJ-8Gw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:15:54,886 - main - ERROR - Audio download failed: 
+2025-02-14 14:21:03,752 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=IsM4bnJ-8Gw
+2025-02-14 14:21:03,753 - main - INFO - Starting download from: https://www.youtube.com/watch?v=IsM4bnJ-8Gw
+2025-02-14 14:21:05,366 - main - ERROR - PyTube error: Exception while accessing title of https://youtube.com/watch?v=IsM4bnJ-8Gw. Please file a bug report at https://github.com/pytube/pytube
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'videoDetails'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 63, in download_audio
+    logger.info(f"Video title: {yt.title}")
+                                ^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 346, in title
+    raise exceptions.PytubeError(
+    ...<4 lines>...
+    )
+pytube.exceptions.PytubeError: Exception while accessing title of https://youtube.com/watch?v=IsM4bnJ-8Gw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:21:05,367 - main - ERROR - Audio download failed: 
+2025-02-14 14:26:56,991 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=IsM4bnJ-8Gw
+2025-02-14 14:26:56,992 - main - INFO - Starting download from: https://www.youtube.com/watch?v=IsM4bnJ-8Gw
+2025-02-14 14:26:57,099 - main - INFO - Starting yt-dlp download...
+2025-02-14 14:26:59,234 - main - ERROR - yt-dlp error: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:26:59,235 - main - ERROR - Download error: 
+2025-02-14 14:26:59,283 - main - ERROR - Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4052, in urlopen
+    return self._request_director.send(req)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 114, in send
+    response = handler.send(request)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_helper.py", line 204, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 325, in send
+    return self._send(request)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_requests.py", line 341, in _send
+    raise HTTPError(res, redirect_loop=max_redirects_exceeded)
+yt_dlp.networking.exceptions.HTTPError: HTTP Error 403: Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3388, in process_info
+    success, real_download = self.dl(temp_filename, info_dict)
+                             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3109, in dl
+    return fd.download(name, new_info, subtitle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\common.py", line 455, in download
+    ret = self.real_download(filename, info_dict)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 364, in real_download
+    establish_connection()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 120, in establish_connection
+    ctx.data = self.ydl.urlopen(request)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4074, in urlopen
+    raise _CompatHTTPError(e) from e
+yt_dlp.networking.exceptions._CompatHTTPError: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 74, in download_audio
+    info = ydl.extract_info(youtube_url, download=True)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1556, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1567, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1723, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1782, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 2922, in process_video_result
+    self.process_info(new_info)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3397, in process_info
+    self.report_error('unable to download video data: %s' % error_to_compat_str(err))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1045, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 984, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 90, in download_audio
+    raise HTTPException(status_code=500, detail=str(e))
+fastapi.exceptions.HTTPException
+
+2025-02-14 14:26:59,284 - main - ERROR - Audio download failed: 
+2025-02-14 14:29:46,945 - main - INFO - Processing video URL: not_a_url
+2025-02-14 14:29:51,018 - main - INFO - Processing video URL: https://example.com
+2025-02-14 14:29:53,055 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2025-02-14 14:29:53,056 - main - INFO - Starting download process for: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2025-02-14 14:29:53,057 - main - INFO - Starting PyTube download from: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+2025-02-14 14:29:55,199 - main - ERROR - PyTube error: Exception while accessing title of https://youtube.com/watch?v=dQw4w9WgXcQ. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:29:55,199 - main - WARNING - PyTube failed, falling back to yt-dlp. Error: Exception while accessing title of https://youtube.com/watch?v=dQw4w9WgXcQ. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:29:55,199 - main - INFO - Attempting yt-dlp download...
+2025-02-14 14:29:58,900 - main - ERROR - yt-dlp error: [0;31mERROR:[0m [youtube] dQw4w9WgXcQ: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+2025-02-14 14:29:58,901 - main - ERROR - All download methods failed: [0;31mERROR:[0m [youtube] dQw4w9WgXcQ: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+2025-02-14 14:29:58,906 - main - ERROR - Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'videoDetails'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 123, in download_audio
+    return download_audio_pytube(youtube_url)
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 62, in download_audio_pytube
+    logger.info(f"Video title: {yt.title}")
+                                ^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 346, in title
+    raise exceptions.PytubeError(
+    ...<4 lines>...
+    )
+pytube.exceptions.PytubeError: Exception while accessing title of https://youtube.com/watch?v=dQw4w9WgXcQ. Please file a bug report at https://github.com/pytube/pytube
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1567, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1702, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\extractor\common.py", line 715, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\extractor\youtube.py", line 4176, in _real_extract
+    self.raise_no_formats(reason, expected=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\extractor\common.py", line 1193, in raise_no_formats
+    raise ExtractorError(msg, expected=expected, video_id=video_id)
+yt_dlp.utils.ExtractorError: [youtube] dQw4w9WgXcQ: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 127, in download_audio
+    return download_audio_ytdlp(youtube_url)
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 104, in download_audio_ytdlp
+    ydl.download([youtube_url])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3511, in download
+    self.__download_wrapper(self.extract_info)(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        url, force_generic_extractor=self.params.get('force_generic_extractor', False))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3486, in wrapper
+    res = func(*args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1556, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1585, in wrapper
+    self.report_error(str(e), e.format_traceback())
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1045, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 984, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] dQw4w9WgXcQ: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+
+2025-02-14 14:29:58,907 - main - ERROR - Audio download failed: 
+2025-02-14 14:30:02,954 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:30:02,954 - main - INFO - Starting download process for: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:30:02,955 - main - INFO - Starting PyTube download from: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:30:04,420 - main - ERROR - PyTube error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:30:04,420 - main - WARNING - PyTube failed, falling back to yt-dlp. Error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:30:04,420 - main - INFO - Attempting yt-dlp download...
+2025-02-14 14:30:06,869 - main - ERROR - yt-dlp error: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:30:06,870 - main - ERROR - All download methods failed: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:30:06,877 - main - ERROR - Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'videoDetails'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 123, in download_audio
+    return download_audio_pytube(youtube_url)
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 62, in download_audio_pytube
+    logger.info(f"Video title: {yt.title}")
+                                ^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 346, in title
+    raise exceptions.PytubeError(
+    ...<4 lines>...
+    )
+pytube.exceptions.PytubeError: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4052, in urlopen
+    return self._request_director.send(req)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 114, in send
+    response = handler.send(request)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_helper.py", line 204, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 325, in send
+    return self._send(request)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_requests.py", line 341, in _send
+    raise HTTPError(res, redirect_loop=max_redirects_exceeded)
+yt_dlp.networking.exceptions.HTTPError: HTTP Error 403: Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3388, in process_info
+    success, real_download = self.dl(temp_filename, info_dict)
+                             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3109, in dl
+    return fd.download(name, new_info, subtitle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\common.py", line 455, in download
+    ret = self.real_download(filename, info_dict)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 364, in real_download
+    establish_connection()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 120, in establish_connection
+    ctx.data = self.ydl.urlopen(request)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4074, in urlopen
+    raise _CompatHTTPError(e) from e
+yt_dlp.networking.exceptions._CompatHTTPError: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 127, in download_audio
+    return download_audio_ytdlp(youtube_url)
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 104, in download_audio_ytdlp
+    ydl.download([youtube_url])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3511, in download
+    self.__download_wrapper(self.extract_info)(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        url, force_generic_extractor=self.params.get('force_generic_extractor', False))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3486, in wrapper
+    res = func(*args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1556, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1567, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1723, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1782, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 2922, in process_video_result
+    self.process_info(new_info)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3397, in process_info
+    self.report_error('unable to download video data: %s' % error_to_compat_str(err))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1045, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 984, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+
+2025-02-14 14:30:06,878 - main - ERROR - Audio download failed: 
+2025-02-14 14:32:08,632 - main - INFO - Processing video URL: not_a_url
+2025-02-14 14:32:12,688 - main - INFO - Processing video URL: https://example.com
+2025-02-14 14:32:14,716 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:32:14,716 - main - INFO - Starting download process for: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:32:14,717 - main - INFO - Starting PyTube download from: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:32:16,477 - main - ERROR - PyTube error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:32:16,477 - main - WARNING - PyTube failed, falling back to yt-dlp. Error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:32:16,478 - main - INFO - Attempting yt-dlp download...
+2025-02-14 14:32:18,383 - main - ERROR - yt-dlp error: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:32:18,383 - main - ERROR - All download methods failed: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:32:18,390 - main - ERROR - Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'videoDetails'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 123, in download_audio
+    return download_audio_pytube(youtube_url)
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 62, in download_audio_pytube
+    logger.info(f"Video title: {yt.title}")
+                                ^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 346, in title
+    raise exceptions.PytubeError(
+    ...<4 lines>...
+    )
+pytube.exceptions.PytubeError: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4052, in urlopen
+    return self._request_director.send(req)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 114, in send
+    response = handler.send(request)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_helper.py", line 204, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 325, in send
+    return self._send(request)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_requests.py", line 341, in _send
+    raise HTTPError(res, redirect_loop=max_redirects_exceeded)
+yt_dlp.networking.exceptions.HTTPError: HTTP Error 403: Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3388, in process_info
+    success, real_download = self.dl(temp_filename, info_dict)
+                             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3109, in dl
+    return fd.download(name, new_info, subtitle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\common.py", line 455, in download
+    ret = self.real_download(filename, info_dict)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 364, in real_download
+    establish_connection()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 120, in establish_connection
+    ctx.data = self.ydl.urlopen(request)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4074, in urlopen
+    raise _CompatHTTPError(e) from e
+yt_dlp.networking.exceptions._CompatHTTPError: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 127, in download_audio
+    return download_audio_ytdlp(youtube_url)
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 104, in download_audio_ytdlp
+    ydl.download([youtube_url])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3511, in download
+    self.__download_wrapper(self.extract_info)(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        url, force_generic_extractor=self.params.get('force_generic_extractor', False))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3486, in wrapper
+    res = func(*args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1556, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1567, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1723, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1782, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 2922, in process_video_result
+    self.process_info(new_info)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3397, in process_info
+    self.report_error('unable to download video data: %s' % error_to_compat_str(err))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1045, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 984, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+
+2025-02-14 14:32:18,391 - main - ERROR - Audio download failed: 
+2025-02-14 14:35:03,556 - main - INFO - Found FFmpeg in system PATH
+2025-02-14 14:35:20,979 - main - INFO - Processing video URL: not_a_url
+2025-02-14 14:35:25,023 - main - INFO - Processing video URL: https://example.com
+2025-02-14 14:35:27,079 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:35:27,079 - main - INFO - Starting download process for: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:35:27,080 - main - INFO - Starting PyTube download from: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:35:28,685 - main - ERROR - PyTube error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:35:28,685 - main - WARNING - PyTube failed, falling back to yt-dlp. Error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:35:28,686 - main - INFO - Attempting yt-dlp download...
+2025-02-14 14:35:30,765 - main - ERROR - yt-dlp error: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:35:30,766 - main - ERROR - All download methods failed: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:35:30,777 - main - ERROR - Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'videoDetails'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 157, in download_audio
+    return download_audio_pytube(youtube_url)
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 62, in download_audio_pytube
+    logger.info(f"Video title: {yt.title}")
+                                ^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytube\__main__.py", line 346, in title
+    raise exceptions.PytubeError(
+    ...<4 lines>...
+    )
+pytube.exceptions.PytubeError: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4052, in urlopen
+    return self._request_director.send(req)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 114, in send
+    response = handler.send(request)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_helper.py", line 204, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 325, in send
+    return self._send(request)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_requests.py", line 341, in _send
+    raise HTTPError(res, redirect_loop=max_redirects_exceeded)
+yt_dlp.networking.exceptions.HTTPError: HTTP Error 403: Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3388, in process_info
+    success, real_download = self.dl(temp_filename, info_dict)
+                             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3109, in dl
+    return fd.download(name, new_info, subtitle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\common.py", line 455, in download
+    ret = self.real_download(filename, info_dict)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 364, in real_download
+    establish_connection()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 120, in establish_connection
+    ctx.data = self.ydl.urlopen(request)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4074, in urlopen
+    raise _CompatHTTPError(e) from e
+yt_dlp.networking.exceptions._CompatHTTPError: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 161, in download_audio
+    return download_audio_ytdlp(youtube_url)
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 134, in download_audio_ytdlp
+    info = ydl.extract_info(youtube_url, download=True)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1556, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1567, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1723, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1782, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 2922, in process_video_result
+    self.process_info(new_info)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3397, in process_info
+    self.report_error('unable to download video data: %s' % error_to_compat_str(err))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1045, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 984, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+
+2025-02-14 14:35:30,778 - main - ERROR - Audio download failed: 
+2025-02-14 14:36:13,617 - main - INFO - Found FFmpeg in system PATH
+2025-02-14 14:38:22,418 - main - INFO - Found FFmpeg in system PATH
+2025-02-14 14:38:39,443 - main - INFO - Found FFmpeg in system PATH
+2025-02-14 14:38:50,230 - main - INFO - Found FFmpeg in system PATH
+2025-02-14 14:38:53,404 - main - INFO - Found FFmpeg in system PATH
+2025-02-14 14:42:51,620 - main - INFO - Found FFmpeg in system PATH
+INFO:main:Found FFmpeg in system PATH
+2025-02-14 14:43:39,141 - main - INFO - Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe
+2025-02-14 14:44:34,958 - main - INFO - Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:44:38,789 - main - INFO - Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:44:51,072 - main - INFO - Processing video URL: not_a_url
+2025-02-14 14:44:55,147 - main - INFO - Processing video URL: https://example.com
+2025-02-14 14:44:57,188 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:44:57,188 - main - INFO - Starting yt-dlp download: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:44:57,189 - main - INFO - Using FFmpeg from: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:44:57,415 - main - INFO - Extracting video info...
+2025-02-14 14:44:59,165 - main - ERROR - yt-dlp download failed:
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4052, in urlopen
+    return self._request_director.send(req)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 114, in send
+    response = handler.send(request)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_helper.py", line 204, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 325, in send
+    return self._send(request)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_requests.py", line 341, in _send
+    raise HTTPError(res, redirect_loop=max_redirects_exceeded)
+yt_dlp.networking.exceptions.HTTPError: HTTP Error 403: Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3388, in process_info
+    success, real_download = self.dl(temp_filename, info_dict)
+                             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3109, in dl
+    return fd.download(name, new_info, subtitle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\common.py", line 455, in download
+    ret = self.real_download(filename, info_dict)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 364, in real_download
+    establish_connection()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 120, in establish_connection
+    ctx.data = self.ydl.urlopen(request)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4074, in urlopen
+    raise _CompatHTTPError(e) from e
+yt_dlp.networking.exceptions._CompatHTTPError: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 125, in download_audio_ytdlp
+    info = ydl.extract_info(youtube_url, download=True)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1556, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1567, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1723, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1782, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 2922, in process_video_result
+    self.process_info(new_info)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3397, in process_info
+    self.report_error('unable to download video data: %s' % error_to_compat_str(err))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1045, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 984, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:44:59,169 - main - WARNING - yt-dlp failed, trying PyTube...
+2025-02-14 14:44:59,170 - main - INFO - Starting PyTube download from: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:45:00,489 - main - ERROR - PyTube error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:45:00,489 - main - ERROR - Download failed: All download methods failed
+Errors:
+yt-dlp error: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+PyTube error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:45:00,490 - main - ERROR - Audio download failed: 
+2025-02-14 14:46:45,160 - main - INFO - Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:46:52,523 - main - INFO - Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:46:54,114 - main - INFO - Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:47:10,488 - main - INFO - Processing video URL: not_a_url
+2025-02-14 14:47:14,575 - main - INFO - Processing video URL: https://example.com
+2025-02-14 14:47:16,643 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:47:16,644 - main - INFO - Starting yt-dlp download: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:47:16,645 - main - INFO - Using FFmpeg from: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:47:16,832 - main - INFO - Extracting video info...
+2025-02-14 14:47:18,769 - main - ERROR - Download error: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:47:18,770 - main - ERROR - yt-dlp download failed:
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4052, in urlopen
+    return self._request_director.send(req)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 114, in send
+    response = handler.send(request)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_helper.py", line 204, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 325, in send
+    return self._send(request)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_requests.py", line 341, in _send
+    raise HTTPError(res, redirect_loop=max_redirects_exceeded)
+yt_dlp.networking.exceptions.HTTPError: HTTP Error 403: Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3388, in process_info
+    success, real_download = self.dl(temp_filename, info_dict)
+                             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3109, in dl
+    return fd.download(name, new_info, subtitle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\common.py", line 455, in download
+    ret = self.real_download(filename, info_dict)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 364, in real_download
+    establish_connection()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 120, in establish_connection
+    ctx.data = self.ydl.urlopen(request)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4074, in urlopen
+    raise _CompatHTTPError(e) from e
+yt_dlp.networking.exceptions._CompatHTTPError: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 140, in download_audio_ytdlp
+    info = ydl.extract_info(youtube_url, download=True)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1556, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1567, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1723, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1782, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 2922, in process_video_result
+    self.process_info(new_info)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3397, in process_info
+    self.report_error('unable to download video data: %s' % error_to_compat_str(err))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1045, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 984, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 158, in download_audio_ytdlp
+    raise Exception(f"YouTube download failed: {str(e)}")
+Exception: YouTube download failed: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:47:18,775 - main - WARNING - yt-dlp failed, trying PyTube...
+2025-02-14 14:47:18,775 - main - INFO - Starting PyTube download from: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:47:20,014 - main - ERROR - PyTube error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:47:20,014 - main - ERROR - Download failed: All download methods failed
+Errors:
+yt-dlp error: YouTube download failed: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+PyTube error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:47:20,014 - main - ERROR - Audio download failed: 
+2025-02-14 14:48:13,619 - main - INFO - Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:48:22,924 - main - INFO - Processing video URL: not_a_url
+2025-02-14 14:48:27,000 - main - INFO - Processing video URL: https://example.com
+2025-02-14 14:48:29,036 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=IsM4bnJ-8Gw
+2025-02-14 14:48:29,037 - main - INFO - Starting yt-dlp download: https://www.youtube.com/watch?v=IsM4bnJ-8Gw
+2025-02-14 14:48:29,038 - main - INFO - Using FFmpeg from: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:48:29,249 - main - INFO - Extracting video info...
+2025-02-14 14:48:30,901 - main - ERROR - Download error: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:48:30,902 - main - ERROR - yt-dlp download failed:
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4052, in urlopen
+    return self._request_director.send(req)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 114, in send
+    response = handler.send(request)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_helper.py", line 204, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\common.py", line 325, in send
+    return self._send(request)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\networking\_requests.py", line 341, in _send
+    raise HTTPError(res, redirect_loop=max_redirects_exceeded)
+yt_dlp.networking.exceptions.HTTPError: HTTP Error 403: Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3388, in process_info
+    success, real_download = self.dl(temp_filename, info_dict)
+                             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3109, in dl
+    return fd.download(name, new_info, subtitle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\common.py", line 455, in download
+    ret = self.real_download(filename, info_dict)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 364, in real_download
+    establish_connection()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\downloader\http.py", line 120, in establish_connection
+    ctx.data = self.ydl.urlopen(request)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4074, in urlopen
+    raise _CompatHTTPError(e) from e
+yt_dlp.networking.exceptions._CompatHTTPError: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 140, in download_audio_ytdlp
+    info = ydl.extract_info(youtube_url, download=True)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1556, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1567, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1723, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1782, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 2922, in process_video_result
+    self.process_info(new_info)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3397, in process_info
+    self.report_error('unable to download video data: %s' % error_to_compat_str(err))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1045, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\yt_dlp\YoutubeDL.py", line 984, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jaspreet Singh\Desktop\project\Quiztrail-extenstion\backend\main.py", line 158, in download_audio_ytdlp
+    raise Exception(f"YouTube download failed: {str(e)}")
+Exception: YouTube download failed: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:48:30,907 - main - WARNING - yt-dlp failed, trying PyTube...
+2025-02-14 14:48:30,908 - main - INFO - Starting PyTube download from: https://www.youtube.com/watch?v=IsM4bnJ-8Gw
+2025-02-14 14:48:32,505 - main - ERROR - PyTube error: Exception while accessing title of https://youtube.com/watch?v=IsM4bnJ-8Gw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:48:32,505 - main - ERROR - Download failed: All download methods failed
+Errors:
+yt-dlp error: YouTube download failed: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+PyTube error: Exception while accessing title of https://youtube.com/watch?v=IsM4bnJ-8Gw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:48:32,506 - main - ERROR - Audio download failed: 
+2025-02-14 14:48:39,693 - main - INFO - Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:52:12,634 - main - INFO - Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:52:19,344 - main - INFO - Processing video URL: not_a_url
+2025-02-14 14:52:23,393 - main - INFO - Processing video URL: https://example.com
+2025-02-14 14:52:25,438 - main - INFO - Processing video URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:52:25,438 - main - INFO - Download attempt 1/3 for: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:52:27,589 - main - WARNING - Attempt 1 failed: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:52:27,589 - main - INFO - Waiting 5 seconds before retry...
+2025-02-14 14:52:32,590 - main - INFO - Download attempt 2/3 for: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:52:34,478 - main - WARNING - Attempt 2 failed: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:52:34,479 - main - INFO - Waiting 10 seconds before retry...
+2025-02-14 14:52:44,480 - main - INFO - Download attempt 3/3 for: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:52:46,332 - main - WARNING - Attempt 3 failed: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:52:46,332 - main - ERROR - Download failed after 3 attempts. Last error: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2025-02-14 14:52:46,333 - main - WARNING - yt-dlp failed, trying PyTube...
+2025-02-14 14:52:46,333 - main - INFO - Starting PyTube download from: https://www.youtube.com/watch?v=jNQXAC9IVRw
+2025-02-14 14:52:47,598 - main - ERROR - PyTube error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:52:47,599 - main - ERROR - All download methods failed:
+yt-dlp error: Download failed after 3 attempts. Last error: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+PyTube error: Exception while accessing title of https://youtube.com/watch?v=jNQXAC9IVRw. Please file a bug report at https://github.com/pytube/pytube
+2025-02-14 14:52:47,599 - main - ERROR - Audio download failed: 
+INFO:main:Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe
+2025-02-14 14:53:47,182 - main - INFO - Found FFmpeg at: C:\Users\Jaspreet Singh\AppData\Local\Programs\Python\Python313\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win64-v4.2.2.exe

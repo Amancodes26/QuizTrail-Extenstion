@@ -3,8 +3,8 @@
     "name": "YouTube Video Transcriber & Quiz Generator",
     "version": "1.0",
     "description": "Transcribe YouTube videos and generate quizzes automatically.",
-    "permissions": ["activeTab", "scripting", "storage"],
-    "host_permissions": ["*://www.youtube.com/*"],
+    "permissions": ["activeTab", "scripting", "storage", "tabs"],
+    "host_permissions": ["*://www.youtube.com/*", "http://localhost:8000/*"],
     "background": {
       "service_worker": "background.js"
     },
@@ -23,4 +23,3 @@
       }
     ]
   }
-  
